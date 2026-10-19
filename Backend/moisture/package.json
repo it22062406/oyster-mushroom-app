@@ -1,0 +1,24 @@
+{
+  "name": "mushroom-backend",
+  "version": "1.0.0",
+  "description": "Node.js backend for mushroom monitoring - calculates TSI and sends alerts",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "dev:api": "ts-node src/server.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "start:api": "node dist/server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.2.1",
+    "firebase-admin": "^13.0.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.10.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
